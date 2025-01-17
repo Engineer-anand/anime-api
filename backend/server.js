@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 });
 
 // Start server on port 4000
-const PORT = 4000||process.env.PORT;
+const PORT = process.env.PORT||4000;
 app.listen(PORT, () => {
   console.log(`Proxy server is running on http://localhost:${PORT}`);
 });
